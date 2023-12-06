@@ -8,7 +8,7 @@ const HomeHero = () => {
         <div className="bg-gray-900">
 
             <section className="relative">
-                <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
+                <div className="relative z-10 max-w-screen-2xl mx-auto px-4 py-28 md:px-8 lg:px-24">
                     <div className="space-y-5 max-w-2xl mx-auto text-center">
                         <h2 className="lg:text-5xl  md:text-4xl text-3xl  text-white font-extrabold mx-auto ">
                             Build and ship fast with Tailwind CSS UI components

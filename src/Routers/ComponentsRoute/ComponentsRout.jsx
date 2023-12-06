@@ -1,13 +1,14 @@
 import React from 'react';
 import Home from '../../Pages/Home/Home';
+import ComingSoon from '../../Pages/Components/CommingSoon';
 
 const ComponentsRoute = [
     {
-        path: '/component',
-        element: <Home></Home>,
+        path: '/components',
+        element: <ComingSoon></ComingSoon>,
     },
     {
-        path: '/component/name',
+        path: '/components/name',
         element: <Home />,
     }
 ]

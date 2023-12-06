@@ -34,8 +34,8 @@ const HomeFeature = () => {
     return (
         <div>
 
-            <section className="py-16 z-50  bg-gray-900">
-                <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+            <section className="py-16  bg-gray-900">
+                <div className="max-w-screen-2xl lg:px-24 mx-auto px-4 md:px-8">
                     <div className="text-center max-w-2xl mx-auto">
                         <h1 className="text-gray-100 md:text-4xl font-extrabold text-2xl">Turn your ideas into reality</h1>
                         <p className="text-gray-100 mt-2">Bright Component offers all the vital building blocks you need to transform your idea into a great-looking startup.</p>
@@ -47,8 +47,13 @@ const HomeFeature = () => {
                             integrations.map((item, idx) => (
                                 <li
                                     key={idx}
-                                    className="relative z-0 group overflow-hidden h-full border border-zinc-800 rounded-xl"
-                                    onMouseMove={handleMouseMove}
+                                    className="relative z-0 group overflow-hidden h-full border border-zinc-800 rounded-xl bg-[radial-gradient(500px_circle_at_var(--cursor-x)_var(--cursor-y),#22d3ee_0,transparent,transparent_70%)]"
+
+                                    style={{
+                                        "--cursor-x": `${cursorPosition.x}px`,
+                                        "--cursor-y": `${cursorPosition.y}px`,
+                                    }}
+
                                 >
                                     <div
                                         className="bg-[linear-gradient(180deg,_#1E293B_0%,_rgba(59,_130,_246,_0.00)_137.53%,_rgba(32,_69,_129,_0.00)_195%)] blur-[70px] opacity-0 absolute top-0 left-0 w-4/5 h-4/5 duration-150 group-hover:opacity-90"
@@ -59,11 +64,11 @@ const HomeFeature = () => {
                                         }}
                                     ></div>
                                     <div className="space-y-3 relative z-10 p-5 bg-[linear-gradient(180deg,_rgba(24,_24,_27,_0.60)_0%,_rgba(24,_24,_27,_0.00)_100%)]">
-                                        <div className="text-gray-500 w-9 h-9 rounded-full bg-[linear-gradient(180deg,_rgba(39,_39,_42,_0.68)_0%,_rgba(39,_39,_42,_0.00)_100%)] flex items-center justify-center border border-zinc-700">
+                                        <div className="text-gray-500 w-9 h-9 rounded-full bg-[linear-gradient(180deg,_rgba(39,_39,_42,_0.68)_0%,_rgba(39,_39,_42,_0.00)_100%)] flex items-center justify-center border border-gray-700">
                                             {item.icon}
                                         </div>
-                                        <h3 className="text-zinc-100 font-semibold">{item.title}</h3>
-                                        <p className="text-zinc-300">{item.desc}</p>
+                                        <h3 className="text-gray-100 font-semibold">{item.title}</h3>
+                                        <p className="text-gray-300">{item.desc}</p>
                                         <div>
                                             <img alt={item.alt} loading="lazy" width="363" height="172" decoding="async" data-nimg="1" className="absolute inset-0 -z-10" style={{ color: 'transparent' }} src='https://floatui.com/_next/static/media/feature-cover.76d1a2e9.svg' />
                                         </div>
