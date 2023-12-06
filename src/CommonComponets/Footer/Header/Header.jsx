@@ -36,7 +36,7 @@ const Header = () => {
 
     return (
         <div class="bg-gray-900  ">
-            <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-24">
+            <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-[87px]">
                 <div class="relative flex items-center justify-between">
                     <Link
                         to="/"
