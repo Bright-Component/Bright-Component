@@ -7,7 +7,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const navigationMenu = [
-        { name: "Components", path: '/component' },
+        { name: "Components", path: '/components' },
         { name: "Templates", path: '/' },
         { name: "Features", path: '/' },
         { name: "Pricing", path: '/' },

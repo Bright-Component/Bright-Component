@@ -24,9 +24,11 @@ const CompontsLayout = () => {
     return (
         <div className='bg-gray-900'>
             <div className={!scrolling ? 'sticky top-0 ' : 'sticky top-0 z-50'}><Header /></div>
-            <div className='flex px-4 py-5  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-24'>
+            <div className='flex px-4 py-5  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-[84px]'>
                 <SideNav />
-                <Outlet />
+                <div className=' ml-3 mt-3 w-full overflow-x-scroll '>
+                    <Outlet />
+                </div>
 
             </div>
             <Footer />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { MdHome } from 'react-icons/md';
+import { MdHome, MdMarkEmailUnread } from 'react-icons/md';
 import { Link, NavLink } from 'react-router-dom';
-import { TfiLayoutSliderAlt } from "react-icons/tfi";
+import { CiShop } from "react-icons/ci";
 import { GrAppsRounded } from "react-icons/gr";
 
 const SideNav = () => {
@@ -41,9 +41,9 @@ const SideNav = () => {
                         <input type="search" name="Search" placeholder="Search..." className="w-full py-2 pl-4 text-sm border-transparent rounded-md focus:outline-none bg-gray-800 text-gray-100 " />
 
                     </div>
-                    <div className="flex-1 w-72  mt-4 border-2 border-gray-400 rounded-xl p-4 " >
+                    <div className="flex-1 w-72  mt-4 border-2 border-gray-400 rounded-xl overflow-hidden" >
 
-                        <div className='overflow-y-scroll  h-screen'>
+                        <div className='overflow-y-scroll  h-screen p-4'>
                             <style>
                                 {`
           ::-webkit-scrollbar {
@@ -61,7 +61,84 @@ const SideNav = () => {
                             <ul className="pt-2 pb-4 pr-4 space-y-1 text-sm  ">
 
                                 <div className='flex items-center mb-4 gap-2 text-xl font-semibold'>
-                                    <GrAppsRounded className='bg-[#0B64B4] p-1 rounded-sm ' />   Application UI
+                                    <GrAppsRounded className='bg-[#0B64B4] p-1 text-2xl rounded-sm ' />   Application UI
+                                </div>
+                                <li className="rounded-sm">
+                                    <NavLink to={'1'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
+                                        Error Page
+                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
+                                    </NavLink>
+                                </li>
+                                <li className="rounded-sm">
+                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
+                                        Table
+                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span></NavLink>
+                                </li>
+                                <li className="rounded-sm">
+                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
+                                        Blogs
+                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
+                                    </NavLink>
+                                </li>
+                                <li className="rounded-sm">
+                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
+                                        Cards
+                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
+                                    </NavLink>
+                                </li>
+                                <li className="rounded-sm">
+                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
+                                        Contacts
+                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
+                                    </NavLink>
+                                </li>
+                                <li className="rounded-sm">
+                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
+                                        Cookies
+                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
+                                    </NavLink>
+                                </li>
+                                <li className="rounded-sm">
+                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
+                                        Footers
+                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
+                                    </NavLink>
+                                </li>
+                                <li className="rounded-sm">
+                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
+                                        Modals
+                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
+                                    </NavLink>
+                                </li>
+                                <li className="rounded-sm">
+                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
+                                        Navbars
+                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
+                                    </NavLink>
+                                </li>
+                                <li className="rounded-sm">
+                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
+                                        Paginations
+                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
+                                    </NavLink>
+                                </li>
+                                <li className="rounded-sm">
+                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
+                                        Auth/Sign In/Up
+                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
+                                    </NavLink>
+                                </li>
+                                <li className="rounded-sm">
+                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
+                                        Error Page
+                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
+                                    </NavLink>
+                                </li>
+                            </ul>
+                            <ul className="pt-2 pb-4 pr-4 space-y-1 text-sm  ">
+
+                                <div className='flex items-center mb-4 gap-2 text-xl font-semibold'>
+                                    <MdMarkEmailUnread className='bg-[#0B64B4] p-1 text-2xl rounded-sm ' />   Marketing UI
                                 </div>
                                 <li className="rounded-sm">
                                     <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
@@ -138,87 +215,10 @@ const SideNav = () => {
                             <ul className="pt-2 pb-4 pr-4 space-y-1 text-sm  ">
 
                                 <div className='flex items-center mb-4 gap-2 text-xl font-semibold'>
-                                    <GrAppsRounded className='bg-[#0B64B4] p-1 rounded-sm ' />   Marketing UI
+                                    <CiShop className='bg-[#0B64B4] p-1 rounded-sm text-2xl' />   E-Commerce
                                 </div>
                                 <li className="rounded-sm">
-                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
-                                        Error Page
-                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
-                                    </NavLink>
-                                </li>
-                                <li className="rounded-sm">
-                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
-                                        Table
-                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span></NavLink>
-                                </li>
-                                <li className="rounded-sm">
-                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
-                                        Blogs
-                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
-                                    </NavLink>
-                                </li>
-                                <li className="rounded-sm">
-                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
-                                        Cards
-                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
-                                    </NavLink>
-                                </li>
-                                <li className="rounded-sm">
-                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
-                                        Contacts
-                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
-                                    </NavLink>
-                                </li>
-                                <li className="rounded-sm">
-                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
-                                        Cookies
-                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
-                                    </NavLink>
-                                </li>
-                                <li className="rounded-sm">
-                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
-                                        Footers
-                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
-                                    </NavLink>
-                                </li>
-                                <li className="rounded-sm">
-                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
-                                        Modals
-                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
-                                    </NavLink>
-                                </li>
-                                <li className="rounded-sm">
-                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
-                                        Navbars
-                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
-                                    </NavLink>
-                                </li>
-                                <li className="rounded-sm">
-                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
-                                        Paginations
-                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
-                                    </NavLink>
-                                </li>
-                                <li className="rounded-sm">
-                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
-                                        Auth/Sign In/Up
-                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
-                                    </NavLink>
-                                </li>
-                                <li className="rounded-sm">
-                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
-                                        Error Page
-                                        <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
-                                    </NavLink>
-                                </li>
-                            </ul>
-                            <ul className="pt-2 pb-4 pr-4 space-y-1 text-sm  ">
-
-                                <div className='flex items-center mb-4 gap-2 text-xl font-semibold'>
-                                    <GrAppsRounded className='bg-[#0B64B4] p-1 rounded-sm ' />   E-Commerce
-                                </div>
-                                <li className="rounded-sm">
-                                    <NavLink to={'/'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
+                                    <NavLink to={'1'} name="Testimonials" aria-label="Testimonials" className="group flex justify-between rounded-md py-2 pr-4 pl-5 text-base capitalize duration-300 hover:bg-[#0B64B4] hover:text-white dark:hover:text-white text-gray-200 font-semibold dark:text-dark-text">
                                         Error Page
                                         <span className="border-0.5 flex h-[26px] min-w-[28px] items-center justify-center rounded border-[#d8dfff] bg-gray-800 px-1 pt-0.5 text-xs font-semibold text-primary duration-300 group-hover:border-white group-hover:text-[#0B64B4] group-hover:bg-white">5</span>
                                     </NavLink>

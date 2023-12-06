@@ -3,7 +3,7 @@ import React from 'react';
 const ComingSoon = () => {
     return (
         <div>
-            <div className="bg-indigo-600">
+            <div className="bg-indigo-600 ">
                 <div className="max-w-screen-xl mx-auto px-4 py-3 flex items-start justify-between text-white md:px-8">
                     <div className="flex gap-x-4">
                         <div className="w-10 h-10 flex-none rounded-lg bg-indigo-800 flex items-center justify-center">

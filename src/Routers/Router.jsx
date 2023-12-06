@@ -17,7 +17,7 @@ const Router = createBrowserRouter([
 
     },
     {
-        path: "/component",
+        path: "/components",
         element: <>
             <ScrollToTop />
             <CompontsLayout />

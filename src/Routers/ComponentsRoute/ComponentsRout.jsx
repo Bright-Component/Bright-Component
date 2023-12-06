@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from '../../Pages/Home/Home';
 import ComingSoon from '../../Pages/Components/CommingSoon';
+import AllComponents from '../../Pages/Components/AllProduct/AllComponents';
 
 const ComponentsRoute = [
     {
@@ -8,8 +9,8 @@ const ComponentsRoute = [
         element: <ComingSoon></ComingSoon>,
     },
     {
-        path: '/components/name',
-        element: <Home />,
+        path: '/components/:id',
+        element: <AllComponents />,
     }
 ]
 
