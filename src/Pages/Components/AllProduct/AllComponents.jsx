@@ -102,7 +102,7 @@ const AllComponents = () => {
                                 </p>
                                 <a
                                     href="javascript:void(0)"
-                                    className="inline-block rounded-lg border border-white px-8 py-3 text-center text-base font-semibold text-white transition hover:bg-white hover:text-primary"
+                                    className="inline-block rounded-lg border border-white px-8 py-3 text-center text-base font-semibold text-white transition hover:bg-white hover:text-[]"
                                 >
                                     Go To Home
                                 </a>
@@ -254,7 +254,7 @@ export default Error;`,
 
                         </div>}
 
-                        <div className='rounded-xl'>{!showCodeMap[component.id] && component.example}</div>
+                        <div className='rounded-xl overflow-auto'>{!showCodeMap[component.id] && component.example}</div>
                         <br />
                     </div>
                 ))}

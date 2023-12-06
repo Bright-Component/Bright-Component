@@ -16,7 +16,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         News
                                     </a>
@@ -24,7 +24,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         World
                                     </a>
@@ -32,7 +32,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         Games
                                     </a>
@@ -40,7 +40,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         References
                                     </a>
@@ -53,7 +53,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         Web
                                     </a>
@@ -61,7 +61,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         eCommerce
                                     </a>
@@ -69,7 +69,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         Business
                                     </a>
@@ -77,7 +77,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         Entertainment
                                     </a>
@@ -85,7 +85,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         Portfolio
                                     </a>
@@ -98,7 +98,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         Media
                                     </a>
@@ -106,7 +106,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         Brochure
                                     </a>
@@ -114,7 +114,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         Nonprofit
                                     </a>
@@ -122,7 +122,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         Educational
                                     </a>
@@ -130,7 +130,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         Projects
                                     </a>
@@ -145,7 +145,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         Infopreneur
                                     </a>
@@ -153,7 +153,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         Personal
                                     </a>
@@ -161,7 +161,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         Wiki
                                     </a>
@@ -169,7 +169,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                                        className="text-gray-500 transition-colors duration-300 hover:text-sky-400"
                                     >
                                         Forum
                                     </a>
@@ -186,11 +186,11 @@ const Footer = () => {
                                 placeholder="Email"
                                 required
                                 type="text"
-                                className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                                className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0 focus:border-sky-400 focus:outline-none focus:shadow-outline"
                             />
                             <button
                                 type="submit"
-                                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-sky-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                             >
                                 Subscribe
                             </button>
