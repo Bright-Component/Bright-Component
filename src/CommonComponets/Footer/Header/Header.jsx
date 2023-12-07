@@ -6,6 +6,7 @@ const Header = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+
     const navigationMenu = [
         { name: "Components", path: '/components' },
         { name: "Templates", path: '/' },
@@ -18,21 +19,6 @@ const Header = () => {
 
 
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setScrolling(true);
-            } else {
-                setScrolling(false);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     return (
         <div class="bg-gray-900  ">
@@ -65,14 +51,14 @@ const Header = () => {
                     </ul>
                     <ul class=" items-center hidden lg:flex">
                         <li>
-                            <a
-                                href="/"
+                            <Link
+                                to={'/sign-up'}
                                 className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-sky-500 hover:bg-sky-400 active:bg-sky-600 duration-150 rounded-full md:inline-flex"
                                 aria-label="Sign up"
                                 title="Sign up"
                             >
                                 Sign up
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <div class="lg:hidden">
