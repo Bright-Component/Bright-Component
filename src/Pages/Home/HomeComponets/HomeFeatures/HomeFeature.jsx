@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaPen } from 'react-icons/fa';
 import { TbZoomInArea } from "react-icons/tb";
 import { MdDashboardCustomize } from "react-icons/md";
+import featureCover from './feature-cover.svg';
 
 const HomeFeature = () => {
     const [cursorPosition, setCursorPosition] = useState({ x: 50, y: 20 });
@@ -70,7 +71,7 @@ const HomeFeature = () => {
                                         <h3 className="text-gray-100 font-semibold">{item.title}</h3>
                                         <p className="text-gray-300">{item.desc}</p>
                                         <div>
-                                            <img alt={item.alt} loading="lazy" width="363" height="172" decoding="async" data-nimg="1" className="absolute inset-0 -z-10" style={{ color: 'transparent' }} src='https://floatui.com/_next/static/media/feature-cover.76d1a2e9.svg' />
+                                            <img alt={item.alt} loading="lazy" width="363" height="172" decoding="async" data-nimg="1" className="absolute inset-0 -z-10" style={{ color: 'transparent' }} src={featureCover} />
                                         </div>
                                     </div>
                                     <div className="absolute inset-[1px] -z-10 rounded-xl bg-gray-900"></div>

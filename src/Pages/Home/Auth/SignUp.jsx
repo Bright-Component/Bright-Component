@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 import Logo from '../../../assets/Black And White Rakia Design Studio Logo.png';
 import { FaEye } from 'react-icons/fa';
 import { TbEyeOff } from 'react-icons/tb';
-import { showNotification } from '../../../CommonComponets/Modal/Sucess';
-
+import BrightAlert from 'bright-alert'
+import { Link, useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
     const [showPassword, setShowPassword] = useState(false);
+    const [loading, setLoading] = useState(false);
     const [password, setPassword] = useState('');
+
+    const navigate = useNavigate()
+
 
 
     const checkPasswordStrength = (password) => {
@@ -58,6 +62,7 @@ const SignUp = () => {
     const passwordStrength = checkPasswordStrength(password);
 
     const SubmitData = (e) => {
+        setLoading(true)
         e.preventDefault();
         const name = e.target.name.value
         const email = e.target.email.value
@@ -74,12 +79,13 @@ const SignUp = () => {
 
             body: JSON.stringify({ data })
         }).then((res) => res.json()).then((data) => {
-            console.log(data.message);
+            setLoading(false)
             if (data.error) {
-                showNotification(`${data.message}`, '', 'warning');
+                BrightAlert(`${data.message}`, '', 'warning');
             }
             else {
-                showNotification(`${data.message}`, '', 'success');
+                BrightAlert(`${data.message}`, '', 'success');
+                navigate('/sign-in')
             }
         })
     }
@@ -164,9 +170,9 @@ const SignUp = () => {
                                     }`}
                             ></div>
                         </div>
-                        <p className="">Already have an account? <a href="javascript:void(0)" className="mb-2 font-semibold  text-[#0B64B4] hover:text-[#0B64B4]">Log in</a></p>
+                        <p className="">Already have an account? <Link to={'/sign-in'} className="mb-2 font-semibold  text-[#0B64B4] hover:text-[#0B64B4]">Sign in</Link></p>
 
-                        <button className="w-full items-center justify-center rounded-lg bg-[#0B64B4] px-8 py-4 text-lg font-semibold text-white duration-300 hover:bg-[#4a99de]">Sign Up</button>
+                        <button disabled={loading} className="w-full disabled:bg-sky-400 disabled:cursor-not-allowed cursor-pointer items-center justify-center rounded-lg bg-[#0B64B4] px-8 py-4 text-lg font-semibold text-white duration-300 hover:bg-[#4a99de]">{!loading ? "Sign Up" : "loading.."}</button>
                     </form>
 
                 </div>

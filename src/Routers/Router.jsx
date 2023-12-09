@@ -4,6 +4,8 @@ import ScrollToTop from "../ScrollTop";
 import { HomeRoute } from "./Home/HomeRoute";
 import { ComponentsRoute } from "./ComponentsRoute/ComponentsRout";
 import CompontsLayout from "../Layouts/CompontsLayout";
+import DashboardLayout from "../Layouts/DashboardLayout";
+import { DashboardRoute } from "./DashBoardRouter/DashboardRoute";
 
 
 const Router = createBrowserRouter([
@@ -23,6 +25,14 @@ const Router = createBrowserRouter([
             <CompontsLayout />
         </>,
         children: ComponentsRoute
+    },
+    {
+        path: "/dashboard",
+        element: <>
+            <ScrollToTop />
+            <DashboardLayout />
+        </>,
+        children: DashboardRoute
     }
 ])
 
