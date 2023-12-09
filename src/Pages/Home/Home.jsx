@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeHero from './HomeComponets/HomeHero/HomeHero';
 import HomeFeature from './HomeComponets/HomeFeatures/HomeFeature';
+import ReactFeature from './HomeComponets/ReactFeatures/ReactFeature';
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <div>
             <HomeHero />
             <HomeFeature />
+            <ReactFeature />
         </div>
     );
 };
